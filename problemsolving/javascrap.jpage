@@ -1,0 +1,2 @@
+int lastanswer = 855677723^924363862;
+System.out.print(lastanswer);
