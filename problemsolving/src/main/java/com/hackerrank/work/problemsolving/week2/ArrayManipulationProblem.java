@@ -1,4 +1,4 @@
-package com.hackerrank.work.problemsolving;
+package com.hackerrank.work.problemsolving.week2;
 import java.io.*;
 import java.math.*;
 import java.security.*;

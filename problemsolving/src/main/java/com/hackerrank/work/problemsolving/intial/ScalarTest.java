@@ -1,4 +1,4 @@
-package com.hackerrank.work.problemsolving;
+package com.hackerrank.work.problemsolving.intial;
 
 public class ScalarTest {
 

@@ -1,4 +1,4 @@
-package com.hackerrank.work.problemsolving;
+package com.hackerrank.work.problemsolving.intial;
 
 import java.util.Scanner;
 

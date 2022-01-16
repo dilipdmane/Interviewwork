@@ -1,4 +1,4 @@
-package com.hackerrank.work.problemsolving;
+package com.hackerrank.work.problemsolving.week2;
 
 import java.util.Iterator;
 import java.util.Scanner;

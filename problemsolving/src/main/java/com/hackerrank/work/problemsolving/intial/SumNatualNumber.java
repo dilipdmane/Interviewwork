@@ -1,8 +1,8 @@
-package com.hackerrank.work.problemsolving;
+package com.hackerrank.work.problemsolving.intial;
 
 import java.util.Scanner;
 
-public class CheckPrime {
+public class SumNatualNumber {
     public static void main(String[] args) {
         // YOUR CODE GOES HERE
         // Please take input and print output to standard input/output (stdin/stdout)
@@ -10,17 +10,15 @@ public class CheckPrime {
         // E.g. 'Scanner' for input & 'System.out' for output
     	 Scanner myObj = new Scanner(System.in);
     			 int nextInt = myObj.nextInt();
-    	System.out.println("Main.main() "+ isPrime(nextInt)); 
+    	System.out.println( sum(nextInt)); 
     	
         
     }
     
-    static boolean isPrime(int num)
+    static int sum(int num)
     {
-       	for (int i=2;i<=num/2;i++)
-		{
-			if( num%i==0) return false;
-		}
-    	return true;
+    	int sum = 0;
+       	sum=(num*(num+1))/2;
+    	return sum;
     }
 }
