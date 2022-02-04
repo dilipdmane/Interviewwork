@@ -20,22 +20,17 @@ public class SeperateOddEven {
           {
         	  String elements = bufferedReader.readLine().replaceAll("\\s+$", "");
         	  String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
-        	  /*int[] array = new int[ Integer.valueOf(elements).intValue()];
-        	  for (int j = 0; j < array.length; j++) {
-				array[j] = Integer.valueOf( firstMultipleInput[j]).intValue();
-        	  }*/
         	  inpArr[i] = firstMultipleInput;
           }
-           	 		   	 	
-	        //int n = Integer.parseInt(firstMultipleInput[0]);	        
 	   	 SeperateOddEven.searchElements( noOfTest, inpArr);
     }
 
 	private static void searchElements(int noOfTest, String[][] inpArr) {
 		for( int i=0;i<noOfTest;i++)
 		{
-			String evenStr = "";
-			String oddStr="";
+			StringBuilder evenStr = new StringBuilder("");
+			StringBuilder oddStr= new StringBuilder("");
+			String sep = " ";
 			String[] arr = inpArr[i];			
 			for (int j = 0; j < arr.length; j++) {
 				int number= Integer.valueOf(arr[j]).intValue();
@@ -43,16 +38,18 @@ public class SeperateOddEven {
 				{
 						if( number%2==0)
 						{
-							evenStr = evenStr+number+" ";									
+							//evenStr = evenStr+number+" ";
+							evenStr.append(number).append(sep);
 						}
 						else
 						{
-							oddStr = oddStr+number+" ";
+							//oddStr = oddStr+number+" ";
+							oddStr.append(number).append(sep);
 						}
 				}
 			}//end of for
-			System.out.println(oddStr);
-			System.out.println(evenStr);			
+			System.out.println(oddStr.toString());
+			System.out.println(evenStr.toString());			
 		}
 	}
 }
