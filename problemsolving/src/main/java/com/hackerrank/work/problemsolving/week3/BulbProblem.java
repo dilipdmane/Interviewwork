@@ -24,7 +24,7 @@ public class BulbProblem {
 		int retCount = 0;
 		if(!A.isEmpty()) {
 		int newState = A.get(0);
-		for (Iterator iterator = A.iterator(); iterator.hasNext();) {
+		for (Iterator<Integer> iterator = A.iterator(); iterator.hasNext();) {
 			Integer switchValue = (Integer) iterator.next();			
 			if( retCount%2==0)
 			{

@@ -1,12 +1,12 @@
-package com.hackerrank.work.problemsolving.intial;
+package com.hackerrank.work.problemsolving.week2.day5;
 
 import java.util.Scanner;
 
-public class PerfectSquare {
+public class FindSquareRoot {
     public static void main(String[] args) {
     	 Scanner myObj = new Scanner(System.in);
     			 int nextInt = myObj.nextInt();
-    	System.out.println( new PerfectSquare().solve(nextInt)); 
+    	System.out.println( new FindSquareRoot().solve(nextInt)); 
     	
         
     }
