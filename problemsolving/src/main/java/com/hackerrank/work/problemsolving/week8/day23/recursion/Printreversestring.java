@@ -1,4 +1,4 @@
-package com.hackerrank.work.problemsolving.week8.recursion.day23;
+package com.hackerrank.work.problemsolving.week8.day23.recursion;
 
 import java.io.BufferedReader;
 import java.io.IOException;
