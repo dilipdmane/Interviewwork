@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class PickFromBothSide {
 
@@ -24,12 +23,16 @@ public class PickFromBothSide {
 	public int solve(ArrayList<Integer> A, int B) {
 		 int maxSum =  0;
 		 int n = A.size();
-		 int[] prefix = new int[A.size()];
-		 int[] sufix = new int[A.size()];
+		 int[] prefix = new int[A.size()];	 
+		 
+		//TODO Get prefix sum
 		 prefix[0] = A.get(0);
 		 for (int i = 1; i < n; i++) {
 			prefix[i]=prefix[i-1]+A.get(i);
 		}	 
+		 
+		 //TODO Get Suffix Sum
+		 int[] sufix = new int[A.size()];
 		 sufix[n-1] = A.get(n-1);
 		 
 		 for (int i = n-2; i>= 0; i-- ){
