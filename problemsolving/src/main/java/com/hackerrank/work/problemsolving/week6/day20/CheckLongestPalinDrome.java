@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class CheckLongestPalinDrome {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
 		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String[] inpArr = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");

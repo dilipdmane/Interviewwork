@@ -3,7 +3,7 @@ package com.hackerrank.work.problemsolving.intial;
 public class ScalarTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 	    public int solve(int[] A, int B) {

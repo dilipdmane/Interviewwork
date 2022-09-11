@@ -28,7 +28,7 @@ If there is no repeating element, <b>return -1</b>.</p>
 public class FirstRepeatingElements {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		String[] firstAInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");		
         ArrayList<Integer> A = Utility.getInstance().convertStringArraytoIntArrayList(firstAInput);        

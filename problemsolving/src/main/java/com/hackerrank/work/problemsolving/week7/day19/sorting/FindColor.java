@@ -27,7 +27,7 @@ Given an integer array A, find if an integer p exists in the array such that the
 public class FindColor {
 	
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		String firstAInput[] = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");		
         System.out.println(new FindColor().solve( Utility.getInstance().convertStringArraytoIntArrayList(firstAInput)));       

@@ -28,7 +28,7 @@ Given an array with N objects colored red, white, or blue, sort them so that obj
 public class CheckNobelInteger {
 	
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		String firstAInput[] = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");		
         System.out.println(new CheckNobelInteger().solve( Utility.getInstance().convertStringArraytoIntArrayList(firstAInput)));       

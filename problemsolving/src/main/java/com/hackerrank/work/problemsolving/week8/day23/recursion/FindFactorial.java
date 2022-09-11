@@ -24,7 +24,7 @@ In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the re
 public class FindFactorial {
 	
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		String firstAInput = bufferedReader.readLine().replaceAll("\\s+$", "");		
         System.out.println(new FindFactorial().findAthFibonacci(Integer.valueOf(firstAInput).intValue()));       

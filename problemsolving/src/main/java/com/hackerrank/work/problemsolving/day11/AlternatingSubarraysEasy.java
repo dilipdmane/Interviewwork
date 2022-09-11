@@ -30,7 +30,7 @@ public ArrayList<Integer> solve(ArrayList<Integer> A, int B) {
     for(int i=0;i<A.size() ;i++){ 	  
     	if( (i+2*B) <A.size() )
     	{
-    		int prev = A.get(i); //todo get current values;
+    		int prev = A.get(i); //TODO get current values;
     		boolean isAlter = true;
     		for(int  j = i+1;j<=(i+2*B);j++)
     		{

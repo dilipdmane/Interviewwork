@@ -9,7 +9,7 @@ import java.util.Iterator;
 public class LowerCase {
 
 	public static void main2(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
 		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String inpArr = bufferedReader.readLine().replaceAll("\\s+$", "");        

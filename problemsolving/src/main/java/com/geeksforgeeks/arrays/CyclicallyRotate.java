@@ -14,7 +14,7 @@ import java.io.InputStreamReader;
 public class CyclicallyRotate {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));      
 
         String noOfEle = bufferedReader.readLine().replaceAll("\\s+$", "");

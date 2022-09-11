@@ -23,7 +23,7 @@ Write a recursive function that, given a string S, prints the characters of S in
 public class Printreversestring {
 	
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		String firstAInput = bufferedReader.readLine().replaceAll("\\s+$", "");		
         System.out.println(new Printreversestring().reverseString( firstAInput));       

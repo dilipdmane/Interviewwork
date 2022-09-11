@@ -11,7 +11,7 @@ import java.util.Iterator;
 public class EvenSubaray {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		//new EvenSubaray().solve(args[0]);
 		//System.out.println("["+solve+"]");
 	}	

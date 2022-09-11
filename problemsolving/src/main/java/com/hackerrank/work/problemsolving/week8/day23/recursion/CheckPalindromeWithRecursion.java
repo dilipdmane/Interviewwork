@@ -20,7 +20,7 @@ import java.io.InputStreamReader;
 public class CheckPalindromeWithRecursion {
 	
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		String firstAInput = bufferedReader.readLine().replaceAll("\\s+$", "");		
         System.out.println(new CheckPalindromeWithRecursion().solve(firstAInput));       
