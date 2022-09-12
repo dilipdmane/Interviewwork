@@ -32,15 +32,7 @@ public class TransposeMatrix {
 	
 	public ArrayList<ArrayList<Integer>> solve(ArrayList<ArrayList<Integer>> A) {
 		
-		for (Iterator iterator = A.iterator(); iterator.hasNext();) {
-			ArrayList<Integer> arrayList = (ArrayList<Integer>) iterator.next();
-			System.out.print("[ ");
-			for (Iterator iterator2 = arrayList.iterator(); iterator2.hasNext();) {
-				Integer integer = (Integer) iterator2.next();
-				System.out.print(integer+", ");	
-			}
-			System.out.print("[ ");
-		}
+		
 		return null;
     }
        
