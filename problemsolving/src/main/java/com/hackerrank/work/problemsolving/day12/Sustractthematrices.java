@@ -14,7 +14,7 @@ public class Sustractthematrices {
        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
        
        int rows = Integer.valueOf(firstMultipleInput[0]).intValue();
-       int columns = Integer.valueOf(firstMultipleInput[0]).intValue();       
+       int columns = Integer.valueOf(firstMultipleInput[1]).intValue();       
        ArrayList<ArrayList<Integer>> inpArray = new ArrayList<>(rows);
        
        for (int i = 0; i < rows; i++) {

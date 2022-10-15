@@ -14,7 +14,7 @@ public class TransposeMatrix {
         //TODO Take First line using buffer reader and seperate element by space.
        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
        int rows = Integer.valueOf(firstMultipleInput[0]).intValue();
-       int columns = Integer.valueOf(firstMultipleInput[0]).intValue();       
+       int columns = Integer.valueOf(firstMultipleInput[1]).intValue();       
        ArrayList<ArrayList<Integer>> inpArray = new ArrayList<>(rows);
        
        for (int i = 0; i < rows; i++) {
