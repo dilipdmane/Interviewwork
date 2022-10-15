@@ -56,5 +56,22 @@ public class Utility {
 		}
 		
 	}
+	
+public void printMatrix( int[][] A, PrintStream out) {
+		
+		if( A !=null && A.length>0) {
+			for (int i = 0; i < A.length; i++) {
+				int[] js = A[i];
+				out.print("|");
+				for (int j = 0; j < js.length; j++) {
+					out.print(" "+js[j]+" ");
+				}
+				out.print("|");
+				out.print("\n");
+			}
+			
+		}
+		
+	}
 
 }
