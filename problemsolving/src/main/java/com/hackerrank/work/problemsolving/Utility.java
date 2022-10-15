@@ -3,7 +3,9 @@
  */
 package com.hackerrank.work.problemsolving;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * @author jyodak
@@ -33,6 +35,25 @@ public class Utility {
 			}
 		}
 		return retList;
+		
+	}
+	
+	public void printMatrix(ArrayList<ArrayList<Integer>> A, PrintStream out) {
+		
+		if( A !=null && !A.isEmpty()) {
+			
+			for (Iterator<ArrayList<Integer>> iterator = A.iterator(); iterator.hasNext();) {
+				ArrayList<Integer> arrayList = (ArrayList<Integer>) iterator.next();
+				out.print("|");
+				for (Iterator<Integer> iterator2 = arrayList.iterator(); iterator2.hasNext();) {
+					Integer integer = (Integer) iterator2.next();
+					out.print(" "+integer+" ");
+				}
+				out.print("|");
+				out.print("\n");
+			}
+			
+		}
 		
 	}
 

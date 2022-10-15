@@ -6,15 +6,15 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class MultiplyMatrix {
+public class Sustractthematrices {
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        //TODO Take First line using buffer reader and separate  element by space.
+        //TODO Take First line using buffer reader and seperate element by space.
        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
        
        int rows = Integer.valueOf(firstMultipleInput[0]).intValue();
-       int columns = Integer.valueOf(firstMultipleInput[1]).intValue();       
+       int columns = Integer.valueOf(firstMultipleInput[0]).intValue();       
        ArrayList<ArrayList<Integer>> inpArray = new ArrayList<>(rows);
        
        for (int i = 0; i < rows; i++) {
@@ -29,7 +29,7 @@ public class MultiplyMatrix {
 String[] secondMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
        
        int rows2 = Integer.valueOf(secondMultipleInput[0]).intValue();
-       int columns2 = Integer.valueOf(secondMultipleInput[1]).intValue();       
+       int columns2 = Integer.valueOf(secondMultipleInput[0]).intValue();       
        ArrayList<ArrayList<Integer>> inpArray2 = new ArrayList<>(rows2);
        
        for (int i = 0; i < rows2; i++) {
@@ -42,42 +42,21 @@ String[] secondMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "")
        }// end of outer for loop
        
        //call solve method to transpose matrix
-       ArrayList<ArrayList<Integer>> solve = new MultiplyMatrix().solve(inpArray,inpArray2);
-       for (Iterator iterator = solve.iterator(); iterator.hasNext();) {
-		ArrayList<Integer> arrayList = (ArrayList<Integer>) iterator.next();
-		for (Iterator iterator2 = arrayList.iterator(); iterator2.hasNext();) {
-			Integer integer = (Integer) iterator2.next();
-			System.out.print( integer + ",");
-		}
-		System.out.println();
-	}
+       new Sustractthematrices().solve(inpArray,inpArray2);
 
 	}// end of main
 	
-	/**
-	 * You are given two integer matrices A(having M X N size) and B(having N X P). You have to multiply matrix A with B and return the resultant matrix. (i.e. return the matrix AB)
-	 * @param A First argument is a 2D integer matrix A.
-	 * @param B Second argument is a 2D integer matrix B
-	 * @return Return a 2D integer matrix denoting AB. Resultant matrix should be of size m x p.
-	 */
 	public ArrayList<ArrayList<Integer>> solve(ArrayList<ArrayList<Integer>> A, ArrayList<ArrayList<Integer>> B) {
-		ArrayList<ArrayList<Integer>> retArrayList = new ArrayList<ArrayList<Integer>>(A.size()) ;//TODO Setting up size as "m"
-		int m = A.size();		
-		for( int i=0;i<m;i++)		{
-			ArrayList<Integer> aRow = A.get(i);			
-			//TODO get p size from array B
-			int p = B.get(0).size();
-			ArrayList<Integer> sumList = new ArrayList<Integer>(p);
-			for ( int j=0; j<p;j++)
+		ArrayList<ArrayList<Integer>> retArrayList = new ArrayList<ArrayList<Integer>>(A.size()) ;
+		for (int i = 0; i < A.size(); i++) {
+			ArrayList<Integer> rowA = A.get(i);
+			ArrayList<Integer> rowB= B.get(i);
+			ArrayList<Integer> sumRows = new ArrayList<Integer>(rowA.size());
+			for( int j=0; j< rowA.size();j++)
 			{
-				int sum = 0;
-				for (int k =0; k<aRow.size();k++ )
-				{
-					sum = sum + ( aRow.get(k)* B.get(k).get(j));
-				}
-				sumList.add(sum);
+				sumRows.add( rowA.get(j)- rowB.get(j));			
 			}
-			retArrayList.add(sumList);
+			retArrayList.add(sumRows);
 		}
 		return retArrayList;
     }

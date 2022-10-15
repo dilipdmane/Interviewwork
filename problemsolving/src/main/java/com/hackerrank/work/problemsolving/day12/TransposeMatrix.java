@@ -4,7 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Iterator;
+
+import com.hackerrank.work.problemsolving.Utility;
 
 public class TransposeMatrix {
 	
@@ -26,18 +27,29 @@ public class TransposeMatrix {
        }// end of outer for loop
        
        //call solve method to transpose matrix
-       new TransposeMatrix().solve(inpArray);
+       Utility.getInstance().printMatrix(inpArray, System.out);
+       Utility.getInstance().printMatrix(new TransposeMatrix().solve(inpArray), System.out);
 
 	}// end of main
 	
 	public ArrayList<ArrayList<Integer>> solve(ArrayList<ArrayList<Integer>> A) {
-		
-		
-		return null;
+		ArrayList<ArrayList<Integer>> retList = new ArrayList<ArrayList<Integer>>();		
+		int n = A.size();
+		int m = A.get(0).size();		
+		for ( int j=0;j<m;j++)
+		{
+			ArrayList<Integer> row = new ArrayList<Integer>(n);
+			for (int i = 0; i<n;i++)
+			{
+				row.add( A.get(i).get(j));
+			}
+			retList.add(row);
+		}		
+		return retList;
     }
-       
-       
-	}
+}
+
+
 	
 
 
