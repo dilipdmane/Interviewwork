@@ -6,6 +6,11 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+ * 
+ * @author jyodak
+ *
+ */
 public class AreMatricesSame {
 	
 	public static void main(String[] args) throws IOException {
@@ -40,6 +45,16 @@ public class AreMatricesSame {
        
 	
 }//end of main
+	
+	/***
+	 * <b>Problem Description</b><br>You are given two matrices A & B of equal dimensions and you have to check whether two matrices are equal or not.
+	 * <blockquote>NOTE: Both matrices are equal if A[i][j] == B[i][j] for all i and j in the given range.<blockquote>
+	 * Time Complexity : n2
+	 * Space Complexity : 1 
+	 * @param A First argument is vector of vector of integers representing matrix A.
+	 * @param B Second argument is vector of vector of integers representing matrix B
+	 * @return Return 1 if both matrices are equal or return 0.
+	 */
 	public int solve(int[][] A, int[][] B) {
 		int ret = 1;		
 		for (int i = 0; i < B.length; i++) 
