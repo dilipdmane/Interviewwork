@@ -74,4 +74,19 @@ public void printMatrix( int[][] A, PrintStream out) {
 		
 	}
 
+public void printMatrix( int[] A, PrintStream out) {
+	
+	if( A !=null && A.length>0) {
+		for (int i = 0; i < A.length; i++) {
+			
+			out.print("|");
+			out.print(A[i]);
+			out.print("|");
+			out.print("\n");
+		}
+		
+	}
+	
+}
+
 }
