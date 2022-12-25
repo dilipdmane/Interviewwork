@@ -3,8 +3,6 @@ package com.hackerrank.work.problemsolving.day13;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Iterator;
 
 import com.hackerrank.work.problemsolving.Utility;
 
@@ -42,8 +40,33 @@ public class ChristmasTrees {
 	 * @return
 	 */
 	public int solve(int[] A, int[] B) {
-		int retVal = 0;
-		return retVal;
+		
+		int n = A.length;
+		int minCost = Integer.MAX_VALUE;
+		
+		/* Starting Array from second number*/
+		for (int i = 1; i < n-1 ; i++) {
+			int minLeftCost = Integer.MAX_VALUE;
+			int minRightCost = Integer.MAX_VALUE;
+			
+			for( int j = i-1;j>=0;j--)
+			{
+				if( (A[j] < A[i]) )
+				{
+					minLeftCost = Math.min(minLeftCost, B[j]);
+				}
+			}			
+			if(minLeftCost == Integer.MAX_VALUE) continue;
+			for( int k = i+1;k<n;k++)
+			{
+				if( (A[k] > A[i]) )
+				{
+					minRightCost = Math.min(minRightCost, B[k]);
+				}
+			}			
+			if(minRightCost == Integer.MAX_VALUE) continue;			
+			minCost = Math.min(minCost, B[i]+minLeftCost+minRightCost);		
+		}	
+		return (minCost == Integer.MAX_VALUE) ? -1:minCost;
     }
 }//end of class
-
