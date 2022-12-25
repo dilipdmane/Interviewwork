@@ -38,6 +38,12 @@ public class Utility {
 		
 	}
 	
+	public void printData(int value, PrintStream out) {
+		out.print("Result = | ");
+		out.print(value);
+		out.print(" |\n");
+	}
+	
 	public void printMatrix(ArrayList<ArrayList<Integer>> A, PrintStream out) {
 		
 		if( A !=null && !A.isEmpty()) {
