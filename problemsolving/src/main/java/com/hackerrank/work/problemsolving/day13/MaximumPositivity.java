@@ -34,10 +34,7 @@ public class MaximumPositivity {
 		int maxArraySize = 0;
 		int arrayCount=0;
 		int firstIndex = -1;
-		
-		
 		for (int i = 0; i < A.length; i++) {
-			
 			if( arrayCount > 0 )
 			{
 				if( A[i]<0)
@@ -76,7 +73,6 @@ public class MaximumPositivity {
 			}
 			
 		}
-		
 		return retArray;
 	}
 }
