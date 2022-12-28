@@ -10,20 +10,21 @@ import org.junit.Test;
 import com.hackerrank.work.problemsolving.day13.ChristmasTrees;
 import com.hackerrank.work.problemsolving.day13.MaximumPositivity;
 import com.hackerrank.work.problemsolving.day14.AddBinaryString;
+import com.hackerrank.work.problemsolving.day14.Numberof1Bits;
 import com.hackerrank.work.problemsolving.day14.SingleNumber;
 
 public class Day14BitManipulationTest {
 	
 	private static AddBinaryString ADD_BIN_STR = null;
 	private static SingleNumber SINGLE_NUMBER_INST = null;
-	
+	private static Numberof1Bits NOOFBIT_INST = null;
 	
 	@Before
 	public void intialize()
 	{
 		ADD_BIN_STR = ( ADD_BIN_STR == null) ? new AddBinaryString() : ADD_BIN_STR;
 		SINGLE_NUMBER_INST = ( SINGLE_NUMBER_INST == null) ? new SingleNumber() : SINGLE_NUMBER_INST;
-		
+		NOOFBIT_INST = ( NOOFBIT_INST == null) ? new Numberof1Bits() : NOOFBIT_INST;
 	}
 	
 	@Test
@@ -63,6 +64,14 @@ public class Day14BitManipulationTest {
 		int[] INP_ARR = new int[] {1, 2, 2}; 
 		int ans = 1;		
 		assertEquals(ans,SINGLE_NUMBER_INST.singleNumber(INP_ARR));
+	}
+	
+	
+	@Test
+	public void testNoOf1DigitInNumber() {		
+		int inp = 450676354; 
+		int ans = 14;		
+		assertEquals(ans,NOOFBIT_INST.numSetBits(inp));
 	}
 	
 

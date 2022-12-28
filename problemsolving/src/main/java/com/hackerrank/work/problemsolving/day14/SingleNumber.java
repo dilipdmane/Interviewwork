@@ -24,14 +24,16 @@ public class SingleNumber {
 	 * Given an array of integers A, every element appears twice except for one.
 	 * <br>Find that integer that occurs once. 
 	 * <br><b>NOTE:</b> Your algorithm should have a linear runtime complexity. 
-	 * 
+	 * <Could you implement it without using extra memory?
 	 * @param A The first and only argument of input contains an integer array A.
 	 * @return Return a single integer denoting the single element.
 	 */
 	public int singleNumber(final int[] A) {
 		int retInt = 0;
-		for (int i = 0; i < A.length; i++) 
+		
+		for (int i = 0; i < A.length; i++) {
 			retInt = retInt^A[i];
+		}		
 		return retInt;
     }
 
