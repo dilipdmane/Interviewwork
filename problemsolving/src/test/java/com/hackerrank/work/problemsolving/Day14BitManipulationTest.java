@@ -74,5 +74,12 @@ public class Day14BitManipulationTest {
 		assertEquals(ans,NOOFBIT_INST.numSetBits(inp));
 	}
 	
+	@Test
+	public void testNoOf1DigitInNumberScalar() {		
+		int inp = 450676354; 
+		int ans = 14;		
+		assertEquals(ans,NOOFBIT_INST.numSetBits2(inp));
+	}
+	
 
 }
