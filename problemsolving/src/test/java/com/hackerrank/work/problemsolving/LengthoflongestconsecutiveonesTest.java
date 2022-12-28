@@ -2,10 +2,12 @@ package com.hackerrank.work.problemsolving;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.hackerrank.work.problemsolving.day13.LengthoflongestConsecutiveOnes;
 
+@Ignore
 public class LengthoflongestconsecutiveonesTest {
 
 

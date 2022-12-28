@@ -10,6 +10,7 @@ import org.junit.Test;
 import com.hackerrank.work.problemsolving.day13.ChristmasTrees;
 import com.hackerrank.work.problemsolving.day13.MaximumPositivity;
 
+@Ignore
 public class Day13InterViewQuestionTest {
 	
 	private static ChristmasTrees CHRISMASTREE_INST = null;
@@ -23,7 +24,7 @@ public class Day13InterViewQuestionTest {
 		MAXPOSITIVITY_INST = ( MAXPOSITIVITY_INST == null) ? new MaximumPositivity() : MAXPOSITIVITY_INST;
 	}
 
-	@Ignore
+	@Test
 	public void testChrismasTreeTest() {
 		int[] TREE_HEIGHT = new int[]{1, 6, 4, 2, 6, 9};
 		int[] TREE_COST = new int[]{2, 5, 7, 3, 2, 7};

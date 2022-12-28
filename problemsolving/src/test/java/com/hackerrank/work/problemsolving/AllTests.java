@@ -5,7 +5,13 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ AppTest.class, LengthoflongestconsecutiveonesTest.class,Day13InterViewQuestionTest.class })
+@SuiteClasses(
+				{ 
+					LengthoflongestconsecutiveonesTest.class,
+					Day13InterViewQuestionTest.class,
+					Day14BitManipulationTest.class
+				}
+			)
 public class AllTests {
 
 }
