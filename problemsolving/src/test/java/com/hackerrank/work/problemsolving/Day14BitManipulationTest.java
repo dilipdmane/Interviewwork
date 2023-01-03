@@ -11,6 +11,7 @@ import com.hackerrank.work.problemsolving.day13.ChristmasTrees;
 import com.hackerrank.work.problemsolving.day13.MaximumPositivity;
 import com.hackerrank.work.problemsolving.day14.AddBinaryString;
 import com.hackerrank.work.problemsolving.day14.Numberof1Bits;
+import com.hackerrank.work.problemsolving.day14.ReverseBitInDigit;
 import com.hackerrank.work.problemsolving.day14.SingleNumber;
 
 public class Day14BitManipulationTest {
@@ -18,6 +19,7 @@ public class Day14BitManipulationTest {
 	private static AddBinaryString ADD_BIN_STR = null;
 	private static SingleNumber SINGLE_NUMBER_INST = null;
 	private static Numberof1Bits NOOFBIT_INST = null;
+	private static ReverseBitInDigit REVERSEBIT_INST = null;
 	
 	@Before
 	public void intialize()
@@ -25,6 +27,7 @@ public class Day14BitManipulationTest {
 		ADD_BIN_STR = ( ADD_BIN_STR == null) ? new AddBinaryString() : ADD_BIN_STR;
 		SINGLE_NUMBER_INST = ( SINGLE_NUMBER_INST == null) ? new SingleNumber() : SINGLE_NUMBER_INST;
 		NOOFBIT_INST = ( NOOFBIT_INST == null) ? new Numberof1Bits() : NOOFBIT_INST;
+		REVERSEBIT_INST = (REVERSEBIT_INST ==null ) ? new ReverseBitInDigit() : REVERSEBIT_INST;
 	}
 	
 	@Test
@@ -81,5 +84,25 @@ public class Day14BitManipulationTest {
 		assertEquals(ans,NOOFBIT_INST.numSetBits2(inp));
 	}
 	
+	@Test
+	public void testReverseBit() {		
+		long inp = 13; 
+		long ans = Long.parseLong("2952790016");
+		assertEquals(ans,REVERSEBIT_INST.reverse(inp));
+	}
+	
+	@Test
+	public void testReverseBitCheckReverse() {	
+		long inp = Long.parseLong("2952790016");
+		long ans = 13;
+		assertEquals(ans,REVERSEBIT_INST.reverse(inp));
+	}
+	
+	@Test
+	public void testReverseBit2() {		
+		long inp = 3; 
+		long ans = Long.parseLong("3221225472");
+		assertEquals(ans,REVERSEBIT_INST.reverse(inp));
+	}
 
 }

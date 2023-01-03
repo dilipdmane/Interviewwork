@@ -100,4 +100,10 @@ public void printMatrix( int[] A, PrintStream out) {
 	
 }
 
+public void printData(long value, PrintStream out) {
+	out.print("Result = | ");
+	out.print(value);
+	out.print(" |\n");
+}
+
 }
