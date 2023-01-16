@@ -1,9 +1,9 @@
-package com.hackerrank.work.problemsolving.week5.day15;
+package com.hackerrank.work.problemsolving.day15;
 
-public class HelpFromSam {
+public class FindingGoodDays {
 	
 	public static void main(String[] args) {
-		System.out.println(new HelpFromSam().solve(5));
+		System.out.println(new FindingGoodDays().solve(5));
 	}
 	
 	

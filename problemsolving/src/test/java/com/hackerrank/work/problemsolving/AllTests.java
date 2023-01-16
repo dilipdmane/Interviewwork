@@ -9,7 +9,8 @@ import org.junit.runners.Suite.SuiteClasses;
 				{ 
 					LengthoflongestconsecutiveonesTest.class,
 					Day13InterViewQuestionTest.class,
-					Day14BitManipulationTest.class
+					Day14BitManipulationTest.class,
+					Day15BitManipulation2Test.class
 				}
 			)
 public class AllTests {
