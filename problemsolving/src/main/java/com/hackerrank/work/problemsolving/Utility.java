@@ -24,6 +24,20 @@ public class Utility {
 		return THIS_INST;
 	}
 	
+	public int[] convertStringArraytoIntArray( String[] inpArray)
+	{
+		int[] retList = null;
+		if( inpArray !=null && inpArray.length>0)
+		{
+			retList = new int[ inpArray.length];
+			for (int i = 0; i < inpArray.length; i++) {
+				retList[i]= Integer.valueOf(inpArray[i]);
+			}
+		}
+		return retList;
+		
+	}
+	
 	public ArrayList<Integer> convertStringArraytoIntArrayList( String[] inpArray)
 	{
 		ArrayList<Integer> retList = null;

@@ -1,15 +1,12 @@
 package com.hackerrank.work.problemsolving;
 
-import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
-import com.hackerrank.work.problemsolving.day13.ChristmasTrees;
-import com.hackerrank.work.problemsolving.day13.MaximumPositivity;
 import com.hackerrank.work.problemsolving.day14.AddBinaryString;
+import com.hackerrank.work.problemsolving.day14.InterestingArray;
 import com.hackerrank.work.problemsolving.day14.Numberof1Bits;
 import com.hackerrank.work.problemsolving.day14.ReverseBitInDigit;
 import com.hackerrank.work.problemsolving.day14.SingleNumber;
@@ -20,6 +17,7 @@ public class Day14BitManipulationTest {
 	private static SingleNumber SINGLE_NUMBER_INST = null;
 	private static Numberof1Bits NOOFBIT_INST = null;
 	private static ReverseBitInDigit REVERSEBIT_INST = null;
+	private static InterestingArray INTERESTING_ARRAY = null;
 	
 	@Before
 	public void intialize()
@@ -28,6 +26,7 @@ public class Day14BitManipulationTest {
 		SINGLE_NUMBER_INST = ( SINGLE_NUMBER_INST == null) ? new SingleNumber() : SINGLE_NUMBER_INST;
 		NOOFBIT_INST = ( NOOFBIT_INST == null) ? new Numberof1Bits() : NOOFBIT_INST;
 		REVERSEBIT_INST = (REVERSEBIT_INST ==null ) ? new ReverseBitInDigit() : REVERSEBIT_INST;
+		INTERESTING_ARRAY = (INTERESTING_ARRAY ==null ) ? new InterestingArray() : INTERESTING_ARRAY;
 	}
 	
 	@Test
@@ -103,6 +102,20 @@ public class Day14BitManipulationTest {
 		long inp = 3; 
 		long ans = Long.parseLong("3221225472");
 		assertEquals(ans,REVERSEBIT_INST.reverse(inp));
+	}
+	
+	@Test
+	public void testInterestngArray() {		
+		int[] inp = {9,17}; 
+		String ans = "Yes";
+		assertEquals(ans,INTERESTING_ARRAY.solve(inp));
+	}
+	
+	@Test
+	public void testInterestngArray2() {		
+		int[] inp = {9}; 
+		String ans = "No";
+		assertEquals(ans,INTERESTING_ARRAY.solve(inp));
 	}
 
 }
