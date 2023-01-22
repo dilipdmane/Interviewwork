@@ -1,5 +1,6 @@
 package com.hackerrank.work.problemsolving;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
@@ -7,17 +8,20 @@ import org.junit.Test;
 
 import com.hackerrank.work.problemsolving.day15.FindingGoodDays;
 import com.hackerrank.work.problemsolving.day15.HelpFromSam;
+import com.hackerrank.work.problemsolving.day15.SingleNumberIII;
 
 public class Day15BitManipulation2Test {
 	
 	private static FindingGoodDays FINDGOOD_DAY = null;
 	private static HelpFromSam HELPFROM_SAM=null; 
+	private static SingleNumberIII SINGLE_NUMBER_II = null;
 	
 	@Before
 	public void intialize()
 	{
 		FINDGOOD_DAY = ( FINDGOOD_DAY == null) ? new FindingGoodDays() : FINDGOOD_DAY;
 		HELPFROM_SAM = ( HELPFROM_SAM == null) ? new HelpFromSam() : HELPFROM_SAM;
+		SINGLE_NUMBER_II = ( SINGLE_NUMBER_II == null) ? new SingleNumberIII() : SINGLE_NUMBER_II;
 	}
 	
 	@Test
@@ -46,6 +50,21 @@ public class Day15BitManipulation2Test {
 		int inp = 3;
 		int out = 2;		
 		assertEquals(out,HELPFROM_SAM.solve(inp));
+	}
+	
+	@Test
+	public void testHelpFromSingleNumberII() {		
+		int[] inp = {1, 2, 3, 1, 2, 4};
+		int[] out = {3,4};		
+		assertArrayEquals(out,SINGLE_NUMBER_II.solve(inp));
+		
+	}
+	
+	@Test
+	public void testHelpFromSingleNumberII2() {		
+		int[] inp = {1,2};
+		int[] out = {1,2};		
+		assertArrayEquals(out,SINGLE_NUMBER_II.solve(inp));
 	}
 
 }
