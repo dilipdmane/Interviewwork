@@ -6,6 +6,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.hackerrank.work.problemsolving.day15.CompressBits;
 import com.hackerrank.work.problemsolving.day15.FindingGoodDays;
 import com.hackerrank.work.problemsolving.day15.HelpFromSam;
 import com.hackerrank.work.problemsolving.day15.MaximumSatisfaction;
@@ -17,6 +18,7 @@ public class Day15BitManipulation2Test {
 	private static HelpFromSam HELPFROM_SAM=null; 
 	private static SingleNumberIII SINGLE_NUMBER_II = null;
 	private static MaximumSatisfaction MAX_SATISFACTION = null;
+	private static CompressBits COMPORESSBITS = null;
 	
 	@Before
 	public void intialize()
@@ -25,6 +27,7 @@ public class Day15BitManipulation2Test {
 		HELPFROM_SAM = ( HELPFROM_SAM == null) ? new HelpFromSam() : HELPFROM_SAM;
 		SINGLE_NUMBER_II = ( SINGLE_NUMBER_II == null) ? new SingleNumberIII() : SINGLE_NUMBER_II;
 		MAX_SATISFACTION = ( MAX_SATISFACTION == null) ? new MaximumSatisfaction() : MAX_SATISFACTION;
+		COMPORESSBITS = ( COMPORESSBITS == null) ? new CompressBits() : COMPORESSBITS;
 	}
 	
 	@Test
@@ -82,6 +85,21 @@ public class Day15BitManipulation2Test {
 		int[] inp = {10, 20, 15, 4, 14};
 		 int out = 4;		
 		assertEquals(out,MAX_SATISFACTION.solve(inp));
+	}
+	
+	@Test
+	public void testCompressBit_1() {		
+		int[] inp = {1, 3, 5};
+		 int out = 7;		
+		assertEquals(out,COMPORESSBITS.compressBits(inp));
+	}
+	
+
+	@Test
+	public void testCompressBit_2() {		
+		int[] inp = {1, 1, 1};
+		 int out = 1;		
+		assertEquals(out,COMPORESSBITS.compressBits(inp));
 	}
 	
 	
