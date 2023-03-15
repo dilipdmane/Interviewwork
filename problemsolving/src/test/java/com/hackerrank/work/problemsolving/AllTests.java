@@ -10,7 +10,8 @@ import org.junit.runners.Suite.SuiteClasses;
 					LengthoflongestconsecutiveonesTest.class,
 					Day13InterViewQuestionTest.class,
 					Day14BitManipulationTest.class,
-					Day15BitManipulation2Test.class
+					Day15BitManipulation2Test.class,
+					Day17ModularArithmaticTest.class
 				}
 			)
 public class AllTests {
