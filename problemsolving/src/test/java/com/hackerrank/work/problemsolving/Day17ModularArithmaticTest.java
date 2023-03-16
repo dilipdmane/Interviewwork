@@ -12,19 +12,18 @@ import com.hackerrank.work.problemsolving.day15.HelpFromSam;
 import com.hackerrank.work.problemsolving.day15.MaximumSatisfaction;
 import com.hackerrank.work.problemsolving.day15.SingleNumberIII;
 import com.hackerrank.work.problemsolving.day17.FindExcelColumnNumber;
+import com.hackerrank.work.problemsolving.day17.GreatestPossiblePositiveInteger;
 
 public class Day17ModularArithmaticTest {
 	
 	private static FindExcelColumnNumber FIND_EXCEL_COL = null;
-	private static HelpFromSam HELPFROM_SAM=null; 
-	private static SingleNumberIII SINGLE_NUMBER_II = null;
-	private static MaximumSatisfaction MAX_SATISFACTION = null;
-	private static CompressBits COMPORESSBITS = null;
+	private static GreatestPossiblePositiveInteger GREAT_POS_INT=null; 
 	
 	@Before
 	public void intialize()
 	{
 		FIND_EXCEL_COL = ( FIND_EXCEL_COL == null) ? new FindExcelColumnNumber() : FIND_EXCEL_COL;
+		GREAT_POS_INT = (GREAT_POS_INT == null )? new GreatestPossiblePositiveInteger() : GREAT_POS_INT;
 		
 	}
 	
@@ -40,6 +39,20 @@ public class Day17ModularArithmaticTest {
 		String inp = "BB";
 		int out = 54;		
 		assertEquals(out,FIND_EXCEL_COL.titleToNumber(inp));
+	}
+	
+	@Test
+	public void testGreatestPositiveInt_T1() {		
+		int a=15,b=5;
+		int out = 10;		
+		assertEquals(out,GREAT_POS_INT.solve(a,b));
+	}
+	
+	@Test
+	public void testGreatestPositiveInt_T2() {		
+		int a=15,b=50;
+		int out = 35;		
+		assertEquals(out,GREAT_POS_INT.solve(a,b));
 	}
 	
 	
