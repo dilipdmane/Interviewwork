@@ -1,4 +1,4 @@
-package com.hackerrank.work.problemsolving.week7.day19.sorting;
+package com.hackerrank.work.problemsolving.day19.sorting;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.hackerrank.work.problemsolving.week7.day21;
+package com.hackerrank.work.problemsolving.day21;
 
 import java.io.BufferedReader;
 import java.io.IOException;
