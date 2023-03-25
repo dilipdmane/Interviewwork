@@ -1,13 +1,6 @@
 package com.hackerrank.work.problemsolving.day21;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-
-import com.hackerrank.work.problemsolving.Utility;
 
 /***
  * 
@@ -24,13 +17,7 @@ import com.hackerrank.work.problemsolving.Utility;
  */
 public class LargestContinuousSequenceZeroSum {
 
-	public static void main(String[] args) throws IOException {
-		
-		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-		String[] firstAInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");		
-        ArrayList<Integer> A = Utility.getInstance().convertStringArraytoIntArrayList(firstAInput);       
-        
-	}
+	
 	
 	
 	public ArrayList<Integer> lszero(ArrayList<Integer> A) {
